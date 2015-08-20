@@ -16,7 +16,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('create-conf', 'creates config file', function() {
 
       // Handle options.
-     var src = '{\n'+
+     var src =  '{\n'+
 		  '\t"current":{\n'+
 			'\t\t"host": "qa.credifi.com",\n'+
 			'\t\t"port": "8083"\n'+
