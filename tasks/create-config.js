@@ -39,12 +39,12 @@ module.exports = function(grunt) {
       // Handle options.
       src += '{\n'+
 		  '\t"current":{\n'+
-			'\t\t"host": "qa.credifi.com",\n'+
-			'\t\t"port": "8083"\n'+
+			'\t\t"host": "localhost",\n'+
+			'\t\t"port": "8000"\n'+
 		  '\t},\n'+
 		  '\t"qa":{\n'+
-			'\t\t"host": "qa.credifi.com",\n'+
-			'\t\t"port": "8083"\n'+
+			'\t\t"host": "somehost",\n'+
+			'\t\t"port": "someport"\n'+
 		  '\t},\n'+
 		  '\t"local":{\n'+
 			'\t\t"host": "localhost",\n'+
