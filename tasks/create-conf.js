@@ -13,27 +13,17 @@ module.exports = function(grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  grunt.registerMultiTask('create-config', 'creates config file', function() {
-    // Merge task-specific and/or target-specific options with these defaults.
-   /* var options = this.options({
-      punctuation: '.',
-      separator: ', '
-    });*/
-     console.log('this.options - ',this.options().dest);
-    // Iterate over all specified file groups.
- 
-      // Concat specified files.
-      var src ;
+  grunt.registerMultiTask('create-conf', 'creates config file', function() {
 
       // Handle options.
-      src += '{\n'+
+     var src = '{\n'+
 		  '\t"current":{\n'+
-			'\t\t"host": "localhost",\n'+
-			'\t\t"port": "8000"\n'+
+			'\t\t"host": "qa.credifi.com",\n'+
+			'\t\t"port": "8083"\n'+
 		  '\t},\n'+
 		  '\t"qa":{\n'+
-			'\t\t"host": "somehost",\n'+
-			'\t\t"port": "someport"\n'+
+			'\t\t"host": "qa.credifi.com",\n'+
+			'\t\t"port": "8083"\n'+
 		  '\t},\n'+
 		  '\t"local":{\n'+
 			'\t\t"host": "localhost",\n'+
@@ -46,11 +36,11 @@ module.exports = function(grunt) {
 		'}';
 
       // Write the destination file.
-      grunt.file.write(this.options().dest, src);
+      grunt.file.write('config.json', src);
 
       // Print a success message.
-      grunt.log.writeln('File "' + this.options().dest + '" created.');
+      grunt.log.writeln('File "'  +'config.json' + '" created.');
   
-  });
+  }); 
 
 };
