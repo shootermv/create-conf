@@ -47,9 +47,9 @@ module.exports = function(grunt) {
 
       // Write the destination file.
       grunt.file.write(this.options().dest, src);
-
       // Print a success message.
       grunt.log.writeln('File "' + this.options().dest + '" created.');
+
   
   });
 
