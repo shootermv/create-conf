@@ -36,6 +36,10 @@
     "gruntplugin"
   ],
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "create-conf": "index.js"
+  },
   "directories": {
     "test": "test"
   },
@@ -43,5 +47,8 @@
   "dependencies": {
     "commander": "^2.8.1",
     "content-disposition": "^0.5.0"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
   }
 }
