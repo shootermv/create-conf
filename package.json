@@ -1,7 +1,7 @@
 {
   "name": "create-conf",
   "description": "creates config file",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/shootermv/create-conf",
   "author": "shootermv <shootermv@gmail.com>",
   "repository": {
