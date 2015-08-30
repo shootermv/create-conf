@@ -1,6 +1,7 @@
+#!/usr/bin/env node
 
 var fs = require('fs');
-
+var path = require('path');
 var myData = {
   "current":{
     "host": "localhost",
@@ -20,6 +21,7 @@ var myData = {
   }
 }
 
+var program = require('commander');
 
 var outputFilename = 'config.json';
 
