@@ -1,7 +1,7 @@
 {
   "name": "create-conf",
   "description": "creates config file",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "homepage": "https://github.com/shootermv/create-conf",
   "author": "shootermv <shootermv@gmail.com>",
   "repository": {
@@ -36,7 +36,7 @@
     "gruntplugin"
   ],
   "main": "index.js",
-  "preferGlobal": true,
+  "preferGlobal": false,
   "bin": {
     "create-conf": "index.js"
   },
